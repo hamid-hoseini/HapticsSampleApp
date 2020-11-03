@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+ 
+    @objc private func successfullyBookedFlight() {
+        HapticsManager.shared.vibrate(for: .success)
+    }
 }
 
